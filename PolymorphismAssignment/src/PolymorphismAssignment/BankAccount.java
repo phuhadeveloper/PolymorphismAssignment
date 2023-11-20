@@ -7,16 +7,6 @@ public class BankAccount {
 	private double balance;
 	
 	public BankAccount() {
-		this.firstName = "";
-		this.lastName = "";
-		this.accountID = 0;
-		this.balance = 0;
-	}
-	
-	public BankAccount(String firstName, String lastName, int accountID) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.accountID = accountID;
 		this.balance = 0;
 	}
 	

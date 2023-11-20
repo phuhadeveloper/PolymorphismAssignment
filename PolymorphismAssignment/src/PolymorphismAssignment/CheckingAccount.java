@@ -3,13 +3,6 @@ package PolymorphismAssignment;
 public class CheckingAccount extends BankAccount {
 	private double interestRate;
 	
-	public CheckingAccount(String firstName, String lastName, int accountID, double interestRate) {
-		super(firstName, lastName, accountID);
-		this.interestRate = interestRate;
-	}
-	
-	// allow overdraft withdrawal and charge a fee of 30 dollars
-	
 	//methods
 	
 	public void processWithdrawal(double amount) {
@@ -18,7 +11,7 @@ public class CheckingAccount extends BankAccount {
 		} else {
 			withdrawal(amount);
 			withdrawal(30);
-			System.out.println("30 dollars have been added to your balance.");
+			System.out.println("30 dollars over draft fee have been added to your balance.");
 			System.out.println("Current balance: " + getBalance());
 		}
 	}
@@ -28,6 +21,10 @@ public class CheckingAccount extends BankAccount {
 		System.out.println("Interest Rate: " + this.interestRate);
 	}
 	
+	//getters and setter
+	public double getInterestRate() { return this.interestRate; }
+	public void setInterestRate(double interestRate) { this.interestRate = interestRate; }
+ 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
