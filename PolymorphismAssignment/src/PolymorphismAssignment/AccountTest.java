@@ -10,7 +10,6 @@ public class AccountTest {
 		int testPassed = 0;
 		
 		System.out.println("Begin Tests.");
-		System.out.println();
 		
 		// 1. Test getBalance and that balance is initialized to 0
 		if (Math.abs(testBA.getBalance()) - 0 < epsilon && Math.abs(testCA.getBalance()) - 0 < epsilon) {
@@ -102,10 +101,10 @@ public class AccountTest {
 		
 		System.out.println("Start test for accountSummary method: ");
 		System.out.println("Expected results: ");
-		System.out.println("First Name: " + testBA.getFirstName());
-		System.out.println("Last Name: " + testBA.getLastName());
-		System.out.println("Account ID: " + testBA.getAccountID());
-		System.out.println("Balance: " + testBA.getBalance());
+		System.out.print("First Name: " + testBA.getFirstName());
+		System.out.print(", Last Name: " + testBA.getLastName());
+		System.out.print(", Account ID: " + testBA.getAccountID());
+		System.out.println(", Balance: " + testBA.getBalance());
 		System.out.println();
 		System.out.println("accountSummary's output: ");
 		testBA.accountSummary();
@@ -114,11 +113,11 @@ public class AccountTest {
 	
 		System.out.println("Start test for displayAccount method: ");
 		System.out.println("Expected results: ");
-		System.out.println("First Name: " + testCA.getFirstName());
-		System.out.println("Last Name: " + testCA.getLastName());
-		System.out.println("Account ID: " + testCA.getAccountID());
-		System.out.println("Balance: " + testCA.getBalance());
-		System.out.println("Interest Rate: " + testCA.getInterestRate());
+		System.out.print("First Name: " + testCA.getFirstName());
+		System.out.print(", Last Name: " + testCA.getLastName());
+		System.out.print(", Account ID: " + testCA.getAccountID());
+		System.out.print(", Balance: " + testCA.getBalance());
+		System.out.println(", Interest Rate: " + testCA.getInterestRate());
 		System.out.println();
 		System.out.println("displayAccount's output: ");
 		testCA.displayAccount();
